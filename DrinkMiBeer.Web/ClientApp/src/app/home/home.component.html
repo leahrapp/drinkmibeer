@@ -1,0 +1,47 @@
+<div class="card">
+	<div class="card-body">
+
+		<h1 class="card-title">Core - Using options</h1>
+		<p>
+			This is a demonstration of setting up a basic map with initial options, including a base layer, an initial zoom level, and a center LatLng position.
+			The zoom level and center position are bound as inputs - <code>[leafletZoom]</code> and <code>[leafletCenter]</code> respectively - so changes are automatically applied to the map.
+			There are also outputs for <code>(leafletZoomChange)</code> and <code>(leafletCenterChange)</code> as well, so changes to the map are communicated to the component.
+			The map is initialized with the options bound to <code>[leafletOptions]</code>.
+			After initialization, changes to the options are ignored.
+		</p>
+
+		<div class="card bg-light">
+			<div class="card-body">
+
+
+			</div>
+		</div>
+
+	</div>
+	<div class="card-body">
+
+		<div class="row">
+
+			<!-- Control Form -->
+			
+			<!-- Map -->
+			<div class="col-sm-12 col-md-6 col-lg-8">
+
+				<div leaflet style="height: 300px;"
+					 [leafletOptions]="options"
+					 [leafletZoom]="zoom"
+					 (leafletZoomChange)="onZoomChange($event)"
+					 [leafletCenter]="center"
+				     (leafletCenterChange)="onCenterChange($event)">
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+
+
+

@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp2.0\DrinkMiBeer.Api.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp2.0\DrinkMiBeer.Api.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\DrinkMiBeer.Api.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\DrinkMiBeer.Api.runtimeconfig.json" />
+    <Content Include="obj\Debug\netcoreapp2.0\DrinkMiBeer.Api.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Cosmos" Version="3.0.0-preview.19074.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp2.0\DrinkMiBeer.Api.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\DrinkMiBeer.Api.pdb" />
+    <None Include="bin\Debug\netcoreapp2.0\DrinkMiBeer.Core.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\DrinkMiBeer.Core.pdb" />
+    <None Include="bin\Debug\netcoreapp2.0\DrinkMiBeer.Infrastructure.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\DrinkMiBeer.Infrastructure.pdb" />
+    <None Include="bin\Debug\netcoreapp2.0\Microsoft.Azure.Documents.ServiceInterop.dll" />
+    <None Include="obj\Debug\netcoreapp2.0\DrinkMiBeer.Api.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\DrinkMiBeer.Api.csproj.CopyComplete" />
+    <None Include="obj\Debug\netcoreapp2.0\DrinkMiBeer.Api.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\DrinkMiBeer.Api.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\DrinkMiBeer.Api.dll" />
+    <None Include="obj\Debug\netcoreapp2.0\DrinkMiBeer.Api.pdb" />
+    <None Include="obj\DrinkMiBeer.Api.csproj.nuget.cache" />
+    <None Include="obj\DrinkMiBeer.Api.csproj.nuget.g.props" />
+    <None Include="obj\DrinkMiBeer.Api.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DrinkMiBeer.Core\DrinkMiBeer.Core.csproj" />
+    <ProjectReference Include="..\DrinkMiBeer.Infrastructure\DrinkMiBeer.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

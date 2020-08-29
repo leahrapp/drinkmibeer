@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netstandard2.0\DrinkMiBeer.Core.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netstandard2.0\DrinkMiBeer.Core.deps.json" />
+    <Content Include="obj\Debug\netstandard2.0\DrinkMiBeer.Core.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netstandard2.0\DrinkMiBeer.Core.dll" />
+    <None Include="bin\Debug\netstandard2.0\DrinkMiBeer.Core.pdb" />
+    <None Include="obj\Debug\netstandard2.0\DrinkMiBeer.Core.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netstandard2.0\DrinkMiBeer.Core.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\DrinkMiBeer.Core.csproj.nuget.g.props" />
+    <None Include="obj\DrinkMiBeer.Core.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="12.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0-preview.19074.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0-preview.19074.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>

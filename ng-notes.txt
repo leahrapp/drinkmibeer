@@ -1,0 +1,20 @@
+update ng:
+ng update @angular/cli @angular/core
+ng update --next @angular/cli @angular/core.
+npm remove webpack -g
+npm i webpack --save-dev
+npm run webpack
+dotnet run
+
+npm uninstall -g @angular/cli
+npm cache verify
+# if npm version is < 5 then use `npm cache clean` 
+npm install -g @angular/cli@latest
+
+
+npm uninstall --save-dev angular-cli
+npm install --save-dev @angular/cli@latest
+
+//updates json 
+npx npm-check-updates -u
+$ npm install 

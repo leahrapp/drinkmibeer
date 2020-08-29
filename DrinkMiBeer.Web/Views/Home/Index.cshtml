@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="pageRoot">
+    <h2 id="outputLabel"></h2>
+    <button id="runButton">Run</button>
+</div>
+
+@section scripts {
+    <script src="~/js/home.js" asp-append-version="true"></script>
+    <page-load pageName="HomePage" initParams="'outputLabel', 'runButton'"></page-load>
+}
